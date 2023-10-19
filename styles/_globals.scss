@@ -3,6 +3,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin */
@@ -67,6 +69,12 @@ select {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  max-width: 38rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 // @media (min-width: 48rem) {

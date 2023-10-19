@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700;800&display=swap");
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin */
@@ -71,7 +73,181 @@ select {
   grid-template-rows: auto 1fr auto;
 }
 
+.container {
+  max-width: 38rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer, .crypto, .hero, .header {
+  padding: 2.8125rem 1.5rem;
+}
+
+.crypto .article-flex, .hero .article-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.crypto, .header {
+  background-color: #5f29a3;
+}
+
 .header {
-  border: 1px solid red;
-  padding: 1rem 1.25rem;
+  text-align: center;
+}
+.header h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+}
+.header h3 {
+  color: #d0aaff;
+  font-size: 1rem;
+}
+
+.hero .article-flex h2 {
+  font-size: 2.25rem;
+}
+.hero .article-flex img {
+  width: 100%;
+}
+.hero .article-flex p {
+  font-size: 1rem;
+}
+.hero .article-flex .nft {
+  color: #ef5839;
+  border-bottom: 1px dotted #ef5839;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+.hero .article-flex .nft:hover {
+  color: #d4b44c;
+  border-bottom: 1px dotted #d4b44c;
+}
+.hero .article-flex .button a {
+  padding: 0.625rem 1.1875rem;
+  border-radius: 0.2875rem;
+  font-weight: 500;
+  color: whitesmoke;
+  background-color: #5f29a3;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+  margin-left: 1rem;
+}
+.hero .article-flex .button a:hover {
+  color: #2b283a;
+  background-color: #f3e885;
+}
+.hero .article-flex .button a:active {
+  color: #2b283a;
+  background-color: #ecdb3f;
+}
+.hero .article-flex .button a:nth-child(2) {
+  padding: 0.625rem 1.1875rem;
+  border-radius: 0.2875rem;
+  font-weight: 500;
+  color: #5f29a3;
+  background-color: #f0e0ff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+}
+.hero .article-flex .button a:nth-child(2):hover {
+  color: #2b283a;
+  background-color: #f3e885;
+}
+.hero .article-flex .button a:nth-child(2):active {
+  color: #2b283a;
+  background-color: #ecdb3f;
+}
+.hero .article-flex .button a:first-child {
+  margin-left: 0rem;
+}
+
+.crypto {
+  color: whitesmoke;
+}
+.crypto h2 {
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+.crypto .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.crypto .image-container img {
+  width: 22rem;
+  border-radius: 0.5rem;
+}
+.crypto a {
+  padding: 0.625rem 1.1875rem;
+  border-radius: 0.2875rem;
+  font-weight: 500;
+  color: #5f29a3;
+  background-color: whitesmoke;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+}
+.crypto a:hover {
+  color: #2b283a;
+  background-color: #f3e885;
+}
+.crypto a:active {
+  color: #2b283a;
+  background-color: #ecdb3f;
+}
+.crypto a:nth-child(2) {
+  padding: 0.625rem 1.1875rem;
+  border-radius: 0.2875rem;
+  font-weight: 500;
+  color: #5f29a3;
+  background-color: #f0e0ff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+}
+.crypto a:nth-child(2):hover {
+  color: #2b283a;
+  background-color: #f3e885;
+}
+.crypto a:nth-child(2):active {
+  color: #2b283a;
+  background-color: #ecdb3f;
+}
+.crypto .button a {
+  margin-left: 1rem;
+}
+.crypto .button a:first-child {
+  margin-left: 0rem;
+}
+
+.footer {
+  text-align: center;
+  color: #5f29a3;
+  font-weight: 800;
+}
+
+@media (min-width: 48rem) {
+  .header,
+  .hero,
+  .footer {
+    padding: 2.8125rem 0rem;
+  }
+  .header {
+    text-align: left;
+  }
+  .crypto .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .crypto .image-container img {
+    width: 18rem;
+    border-radius: 0.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

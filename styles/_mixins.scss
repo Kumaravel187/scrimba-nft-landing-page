@@ -1,0 +1,20 @@
+@mixin link-style($colOne, $colTwo) {
+  padding: 0.625rem 1.1875rem;
+  border-radius: 0.2875rem;
+  font-weight: $fw-bold;
+  color: $colOne;
+  background-color: $colTwo;
+  text-decoration: none;
+  font-weight: $fw-bolder;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    color: $black;
+    background-color: $yellow;
+  }
+
+  &:active {
+    color: $black;
+    background-color: darken($color: $yellow, $amount: 15%);
+  }
+}

@@ -1,7 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700;800&display=swap");
 // color
 
 $black: #2b283a;
+$purple: #5f29a3;
+$pink: #d0aaff;
+$light-pink: #f0e0ff;
+$white: whitesmoke;
+$red-link-text: #ef5839;
+$orange-hover-text: #d4b44c;
+$yellow: #f3e885;
 
 // ## Typography
 
@@ -22,4 +29,4 @@ $fw-light: 300;
 $fw-main: 400;
 $fw-bold: 500;
 $fw-bolder: 700;
-$fw-dark: 900;
+$fw-dark: 800;
